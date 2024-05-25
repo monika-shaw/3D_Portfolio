@@ -1,19 +1,20 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar"
+import { About, Project, Home, Contact } from "./pages"
 
 const App = () => {
   return (
-   <main className=" bg-slate-300/50">
-    <Router>
-        <Navbar/>
+    <main className=" bg-slate-300/50">
+      <Router>
+        <Navbar />
         <Routes>
-        <Route path="/" element={"Home"}/>
-        <Route path="/about" element={"About"}/>
-        <Route path="/projects" element={"Project"}/>
-        <Route path="/contact" element={"Contact"}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-    </Router>
-   </main>
+      </Router>
+    </main>
   )
 }
 

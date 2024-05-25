@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
@@ -11,13 +10,10 @@ export const Navbar = () => {
                 <NavLink to="about" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-blackƒ'}>
                     About
                 </NavLink>
-            </nav>
-            <nav className='flex text-lg gap-7 font-medium'>
                 <NavLink to="/projects" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-blackƒ'}>
                     Projects
                 </NavLink>
             </nav>
-            
         </header>
     )
 }
