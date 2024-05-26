@@ -2,7 +2,7 @@ import React from 'react'
 import planeScene from '../assets/3d/plane.glb'
 import { useGLTF } from '@react-three/drei'
 
-export const Plane = () => {
+const Plane = () => {
     const { scene, animations } = useGLTF(planeScene)
     return (
         <mesh>
@@ -10,3 +10,5 @@ export const Plane = () => {
         </mesh>
     )
 }
+
+export default Plane
