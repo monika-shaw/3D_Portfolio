@@ -9,9 +9,10 @@ const Project = () => {
             <h1 className="head-text">My
                 <span className="blue-gradient_text font-semibold drop-shadow"> Projects</span>
             </h1>
-            <div className="mt-5 flex flex-col gap-3 text-slate-500">
-                <p className="">Software Enginner based on India, specializing in technical
-                    education through hands-on learning and building applications.
+            <div className="mt-5 flex flex-col gap-3 text-slate-500 text-justify">
+                <p className="">I've been involved in numerous live projects, demonstrating my expertise in front-end development.
+                    These endeavors encompass responsive websites, interactive dashboards, and dynamic platforms.
+                    Several of these projects are open-source, inviting you to explore the codebase and share your insights for further improvement. Your participation is greatly appreciated!
                 </p>
             </div>
 
@@ -34,7 +35,7 @@ const Project = () => {
                                 {project.name}
                             </h4>
                             <p
-                                className="mt-2 text-slate-500"
+                                className="mt-2 text-slate-500 text-justify"
                             >{project.description}</p>
                             <div className="mt-5 flex items-center gap-2 font-poppins">
                                 <Link

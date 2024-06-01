@@ -10,8 +10,7 @@ const About = () => {
                 <span className="blue-gradient_text font-semibold drop-shadow"> Monika</span>
             </h1>
             <div className="mt-5 flex flex-col gap-3 text-slate-500">
-                <p className="">Software Enginner based on India, specializing in technical
-                    education through hands-on learning and building applications.
+                <p className="">I am a Software Engineer based in India, with a specialization in technical education through practical, hands-on learning and application development.
                 </p>
             </div>
 
@@ -21,7 +20,7 @@ const About = () => {
                 <div className="mt-16 flex flex-wrap gap-12">
                     {skills.map((skill) => (
                         <div className="block-container w-20 h-20">
-                            <div className="btn-back rounded-xl" />
+                            <div className="btn-back rounded-xl bg-slate-50" />
                             <div className="btn-front rounded-xl flex justify-center items-center">
                                 <img
                                     src={skill.imageUrl}
@@ -37,8 +36,8 @@ const About = () => {
             <div className="py-16">
                 <h3 className="subhead-text">Work Experience</h3>
                 <div className="mt-5 flex flex-col gap-3 text-slate-500">
-                    <p className="">Software Enginner based on India, specializing in technical
-                        education through hands-on learning and building applications.
+                    <p className="">I am an experienced front-end developer, I've concurrently ventured into backend technologies, 
+                    actively learning to enhance my capabilities towards full-stack development.
                     </p>
                 </div>
 

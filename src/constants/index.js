@@ -1,12 +1,14 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { cctech} from "../assets/images";
 import {
     car,
+    compiler,
     contact,
     css,
     estate,
     express,
     git,
     github,
+    hexImg,
     html,
     javascript,
     linkedin,
@@ -15,7 +17,9 @@ import {
     mui,
     nextjs,
     nodejs,
+    paint,
     pricewise,
+    qr,
     react,
     redux,
     sass,
@@ -23,13 +27,24 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    weather
 } from "../assets/icons";
 
 export const skills = [
     {
         imageUrl: css,
         name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
         type: "Frontend",
     },
     {
@@ -46,26 +61,6 @@ export const skills = [
         imageUrl: github,
         name: "GitHub",
         type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
     },
     {
         imageUrl: mui,
@@ -93,11 +88,6 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
@@ -111,118 +101,81 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Software Development Intern",
+        company_name: "CCTech",
+        icon: cctech,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "March 2022 - June 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Gained hands-on experience in software development",
+            "Contributed to multiple projects and collaborated with a development team",
+            "Implemented new features and optimized existing applications",
+            "Participated in code reviews and learned software engineering best practices"
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Front-End Developer",
+        company_name: "CCTech",
+        icon: cctech,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "July 2022 - Current",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Developing and maintaining web applications using React.js, Redux and other related technologies.",
+            "Collaborating with cross-functional teams including UI/UX designers, back-end developers, and other developers to create high-quality products.",
+            "Designed and implemented responsive web applications, ensuring compatibility across various browsers and devices.",
             "Participating in code reviews and providing constructive feedback to other developers.",
+            "Continuously updated skills and kept abreast of latest industry trends and best practices in front-end development.",
         ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
 export const socialLinks = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/monika-shaw',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/monika-shaw22/',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: hexImg,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Hex Color Generator',
+        description: 'This tool generates hexadecimal color codes, offering a variety of shades and hues to inspire your designs. Easily experiment with different colors for your projects.',
+        link: 'https://color-shade.netlify.app/',
     },
     {
         iconUrl: summiz,
+        theme: 'btn-back-green',
+        name: 'Online Compiler',
+        description: 'A versatile compiler that supports multiple programming languages, enabling users to write and run code snippets in real-time. Enhance your coding experience with this intuitive platform.',
+        link: 'https://codecrafterr.netlify.app/',
+    },
+    {
+        iconUrl: paint,
+        theme: 'btn-back-pink',
+        name: 'Random Color Palatte',
+        description: 'Explore a wide range of vibrant color palettes generated randomly. Perfect for artists, designers, and anyone seeking creative inspiration for their projects.',
+        link: 'https://crazy-colorss.netlify.app/',
+    },
+    {
+        iconUrl: weather,
+        theme: 'btn-back-black',
+        name: 'Real-Time Weather Application',
+        description: 'Stay informed about the weather conditions in your area with this intuitive weather application. Get accurate forecasts and updates to plan your activities accordingly.',
+        link: 'https://weatherinfow.netlify.app/',
+    },
+    {
+        iconUrl: qr,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'QR Code Generator',
+        description: 'Generate QR codes quickly and easily for various purposes, including sharing links, contact information, and more. Simplify your QR code creation process with this user-friendly tool.',
+        link: 'https://qrcode-ja8t.onrender.com/',
     }
 ];

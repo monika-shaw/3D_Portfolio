@@ -5,6 +5,7 @@ import Fox from "../models/Fox"
 import Loader from "../components/Loader"
 import useAlert from "../hooks/useAlert"
 import Alert from "../components/Alert"
+import { socialLinks } from "../constants"
 
 const Contact = () => {
     const formRef = useRef()
@@ -113,6 +114,11 @@ const Contact = () => {
                         {isLoading ? 'Sending...' : 'Send Message'}
                     </button>
                 </form>
+                <div className="flex-1 min-w-[10%] flex flex-row gap-2 mt-2 justify-center text-center">
+                    {socialLinks.map((links) => (
+                        <a href={links.link}><img src={links.iconUrl} width={30} height={30} /></a>
+                    ))}
+                </div>
             </div>
             <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
                 <Canvas
